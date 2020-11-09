@@ -53,6 +53,48 @@
                     <a href="SQLPage.html">SQL</a><br>
                 </aside>
             </div>
+
+            <div id="azienda">
+                <p><u><b>La nostra azienda</b></u></p>
+            </div>
+            
+            <div id="pres2">
+                <p>La nostra è un'azienda informatica specializzata, tra l'altro, nella riparazione di dispositivi quali PC,
+                    smartphone e tablet. Offriamo assistenza sia hardware che software per risolvere qualsiasi tipo di problema. </p>
+            </div>
+
+            <table style="margin-left: 3px;">
+                <tbody>
+                    <tr><th>Corso</th><th>Numero Ore</th></tr>
+                    <tr><td>Python</td><td>15</td></tr>
+                    <tr><td>C#</td><td>18</td></tr>
+                    <tr><td>Html</td><td>12</td></tr>
+                    <tr><td>SQL</td><td>15</td></tr>
+                    <tr><td><b>Totale</b></td><td id="tot"></td></tr>
+                </tbody>
+            </table>
+            
+            <div id="footer">
+                <footer>
+                    <p>Contatti - Numeri di telefono: 111 1111111 / 222 2222222 - mail: lanostraazienda@gmail.com</p>
+                </footer>
+            </div>
+
+            <script>
+                var cells = document.getElementsByTagName("td");
+                var tot = 0;
+                for (var i = 0; i < (cells.length-1); i++)
+                {
+                    var el = cells[i].textContent;
+                    var conv = isNaN(el);
+                    if(!conv)
+                    {
+                        el = parseInt(el);
+                        tot = tot + el;
+                    }
+                    document.getElementById("tot").textContent = tot;
+                }
+            </script>
         </body>
     </div>
 </html>
