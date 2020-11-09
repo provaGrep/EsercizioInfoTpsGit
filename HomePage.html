@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Esercitazione finale git</title>
+        <link rel="stylesheet" href="HomePage.css">
+    </head>
+    
+    <div id="page">
+        <body>
+            <div id="header">
+                <header>
+                    <h1>Corsi di informatica</h1>
+                    <picture>
+                        <source srcset="ImmagineHome2.jpg" media="(max-width: 749px)">
+                        <source srcset="ImmagineHome1.jpg" media="(max-width: 999px)">
+                        <source srcset="ImmagineHome1.jpg">
+                        <img id="image" src="ImmagineHome1.jpg" alt="Img">
+                    </picture>
+ 
+                    <nav>
+                        <div id="nav1">
+                            <a href="PythonPage.html">Python</a>
+                        </div>
+                        <div id="nav1">
+                            <a href="CsharpPage.html">C#</a>
+                        </div>
+                        <div id="nav1">
+                            <a href="HtmlPage.html">Html</a>
+                        </div>
+                        <div id="nav1">
+                            <a href="SQLPage.html">SQL</a>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        
+            <div id="pres">
+                <h2>Corsi - Programmazione in Python, C#, Html, SQL</h2>
+                <div id="description">
+                    <p>Ciascun corso ha come obiettivo l'apprendimento delle conoscenze e lo sviluppo delle
+                        competenze di base del relativo linguaggio. Lo svolgimento di ciascun corso prevede
+                        un diverso numero di ore e, nel caso in cui almeno il 50% di esse siano state completate,
+                        il rilascio di un relativo attestato di frequenza.</p>
+                </div>
+            </div>
+            
+            <div id="nav2">
+                <h3>Pagine dei corsi:</h3>
+                <aside>
+                    <a href="PythonPage.html">Python</a><br>
+                    <a href="CsharpPage.html">C#</a><br>
+                    <a href="HtmlPage.html">Html</a><br>
+                    <a href="SQLPage.html">SQL</a><br>
+                </aside>
+            </div>
+
+            <div id="azienda">
+                <p><u><b>La nostra azienda</b></u></p>
+            </div>
+            
+            <div id="pres2">
+                <p>La nostra è un'azienda informatica specializzata, tra l'altro, nella riparazione di dispositivi quali PC,
+                    smartphone e tablet. Offriamo assistenza sia hardware che software per risolvere qualsiasi tipo di problema. </p>
+            </div>
+
+            <table style="margin-left: 3px;">
+                <tbody>
+                    <tr><th>Corso</th><th>Numero Ore</th></tr>
+                    <tr><td>Python</td><td>15</td></tr>
+                    <tr><td>C#</td><td>18</td></tr>
+                    <tr><td>Html</td><td>12</td></tr>
+                    <tr><td>SQL</td><td>15</td></tr>
+                    <tr><td><b>Totale</b></td><td id="tot"></td></tr>
+                </tbody>
+            </table>
+            
+            <div id="footer">
+                <footer>
+                    <p>Contatti - Numeri di telefono: 111 1111111 / 222 2222222 - mail: lanostraazienda@gmail.com</p>
+                </footer>
+            </div>
+
+            <script>
+                var cells = document.getElementsByTagName("td");
+                var tot = 0;
+                for (var i = 0; i < (cells.length-1); i++)
+                {
+                    var el = cells[i].textContent;
+                    var conv = isNaN(el);
+                    if(!conv)
+                    {
+                        el = parseInt(el);
+                        tot = tot + el;
+                    }
+                    document.getElementById("tot").textContent = tot;
+                }
+            </script>
+        </body>
+    </div>
+</html>
