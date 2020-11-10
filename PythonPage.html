@@ -1,1 +1,105 @@
-
+<!DOCTYPE html>
+<html lang = "it">
+	<head>
+		<title>CorsoPython</title>
+		<meta charset = "UTF-8"/>
+		<meta name = "author" content = "Mattia Don"/>
+		<meta name = "description" content = "In questo sito troverai l'organizzazione del corso Python"/>
+		<meta name = "keywords" content = "Python, Corso, Orari"/><!--non sono così incisive -->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="PythonPage.css">
+        <!-- <link rel="stylesheet" type="text/css" href="CSSFiles/PaginaPhone.css"> -->
+	</head>
+	<body>
+		<header>
+			<h1>CORSO PYTHON</h1>
+			<picture>
+                <source media="(min-width: 850px)" srcset="LargeImagePython.jpg" alt = "PythonLogo" width = "825">
+                <source media="(min-width: 665px)" srcset="MidImagePython.jpg" alt = "PythonLogo" width = "650">
+                <img id = "image" src="SmallImagePython.png" alt = "PythonLogo"/>
+            </picture>
+			<p align="justify" id = "navBar">
+                <a href="../HomePage.html" class="a1">HomePage</a>
+                <a href="#" target = "_blank" class="a1">C#Page</a><!--posso fare #nomeID-->
+                <a href="#" target = "_blank" class="a1">PythonPage</a>
+                <a href="#" target = "_blank" class="a1">HtmlPage</a>
+                <a href="#" target = "_blank" class="a1">JavaPage</a>
+            </p>
+		</header>
+		<div>
+			<h2><strong>ALLA SCOPERTA DI PYTHON</strong></h2>
+			<div>
+				<p align="justify">In questo corso potrai imparare nuove skills di python.
+					Lorem ipsum dolor sit amet, 
+					consectetur adipiscing elit, 
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, 
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					Excepteur sint occaecat cupidatat non proident,
+					sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+            </div>
+            <div class="column">
+                <h3>Tabella lezioni</h3>
+                <table border="3px">
+                    <thead>
+                        <th>Fondamenti</th>
+                        <th>Avanzamento</th>
+                        <th>Progetto Finale</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="left">
+                                Cos'&egrave; Python<br>Parole chiave Python<br>Primo Programmino Python
+                            </td>
+                            <td align="left">
+                                Oggetti Python<br>Metodi Python<br>Classi Python
+                            </td>
+                            <td align="left">
+                                Progettazione<br>Sviluppo<br>Conclusione&copy;
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="column">
+                <h3>Link pagine</h3>
+                <p>
+                    <a href="../HomePage.html" class="a2">HomePage</a>
+                    <a href="#" target = "_blank" class="a2">C#Page</a>
+                    <a href="#" target = "_blank" class="a2">PythonPage</a>
+                    <a href="#" target = "_blank" class="a2">HtmlPage</a>
+                    <a href="#" target = "_blank" class="a2">JavaPage</a>
+                </p>
+            </div>
+            <footer>
+                <table id="tabellalezioni" style="width: 300; text-align: center;" border="2" align="left">
+                    <tbody>
+                        <tr><th>Lezioni</th><th>Ore</th></tr>
+                        <tr><td>Lezione 1</td><td>2</td></tr>
+                        <tr><td>Lezione 2</td><td>2.30</td></tr>
+                        <tr><td>Lezione 3</td><td>3</td></tr>
+                        <tr><td>TOTALE</td><td id="totale"></td></tr>
+                    </tbody>
+                </table>
+                <script>
+                    var tab=document.getElementById("tabellalezioni");
+                    var cell=tab.getElementsByTagName("td");
+                    var tot=0;
+                    var valore=0;
+                    for(i=0;i<(cell.length-1);i++)
+                    {   
+                        valore=cell[i].textContent;
+                        if(! isNaN(valore))
+                        {
+                            valore=parseFloat(valore);
+                            tot=tot+valore;
+                        }
+                    }
+                    document.getElementById("totale").textContent=tot;
+                </script>
+            </footer>
+        </div>
+    </body>
+</html>
