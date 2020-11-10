@@ -1,0 +1,77 @@
+
+    body{
+        background-color: lightgray;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        color: black;
+        /* font-size: large; */
+        
+        
+        
+    }
+    .flex{width: 100%;}
+    table, th, td{
+      border: 1px solid black;
+      border-collapse: collapse;
+      
+  }
+  thead { 
+    background-color: grey;
+  }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        width: 100%;
+        
+      }
+      
+      li {
+        float: left;
+        text-align: center;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      
+      .active {
+        background-color: #4CAF50;
+      }
+     
+      @media only screen and (max-width: 850px) {
+
+        
+        .table-fluid table, 
+        .table-fluid thead, 
+        .table-fluid tbody, 
+        .table-fluid th, 
+        .table-fluid td, 
+        .table-fluid tr { display: block; }
+        .table-fluid thead tr { position: absolute; left: -9999px; top: -9999px; }
+        .table-fluid tr th { background: #337ab7; border: 1px solid #337ab7 !important; color: #fff; }
+        .table-fluid tr td { border: none; border-bottom: 1px solid #eee; padding-left: 50%; position: relative; text-align: right; white-space: normal; }
+        .table-fluid tr td:before { font-weight: bold; left: 6px; padding-right: 10px; position: absolute; text-align: left; top: 6px; white-space: nowrap; width: 45%; }
+        .table-fluid tr td:before { content: attr(data-title); }
+    }
+    
+   
+   
+   
+  
+  
+
+
+
+    
+      

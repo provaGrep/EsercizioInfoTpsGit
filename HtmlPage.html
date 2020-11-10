@@ -1,1 +1,93 @@
+<html>
+    <header>
+        <meta charset='UTF-8'>
+        <title>Corso HTML</title>
+        <link rel="stylesheet" type="text/css" href="filecss.css">
+        <h1 >Corso HTML</h1>
+        
+        <img  class="flex" src="https://robertoassistenza.altervista.org/wp-content/uploads/2019/08/header-4.png">
+    </header>
+    
+    <body>
+        
+        
+          
+          <ul >
+            <li><a  href="HomePage.html">Home</a></li>
+            <li><a href="CSharpPage.html">C#</a></li>
+            <li><a class="active" href="">HTML</a></li>
+            <li><a href="SQLPage.html">SQL</a></li>
+            <li><a href="PythonPage.html">Python</a></li>
+          </ul>
+        <h2>COSA FACCIAMO IN QUESTO CORSO</h2>
+        <p style="font-size:1.2vw;">Contrary to popular belief, Lorem Ipsum is n a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on. </p>
+       
+        <h3>ECCO COSA AFFONTERAI NELLO SPECIFICO:</h3>
+        
+          
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lezione 1</th>
+                        <th>Lezione 2</th>
+                        <th>Lezione 3</th>
+                        <th>Lezione 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-title="Lezione 1">Contrary to popular belief, Lorem Ipsum is n a piece of classical Latin literature from 45</td>
+                        <td data-title="Lezione 2">Contrary to popular belief, Lorem Ipsum is n a piece of classical Latin literature from 45</td>
+                        <td data-title="Lezione 3">Contrary to popular belief, Lorem Ipsum is n a piece of classical Latin literature from 45</td>
+                        <td data-title="Lezione 4">Contrary to popular belief, Lorem Ipsum is n a piece of classical Latin literature from 45</td>
+                    </tr>
+                </tbody>
+          
+        
+           
+        </table>
+        
+        <h3>OGNI LEZIONE, A SECONDA DELL'ARGOMENTO HA UNA DURATA DIFFERENTE:</h3>
 
+        <ul style="width: 120;height: 250; position: absolute; right: 0;">
+            <li><a  href="HomePage.html">Home</a></li>
+            <li><a href="CSharpPage.html">C#</a></li>
+            <li><a class="active" href="">HTML</a></li>
+            <li><a href="SQLPage.html">SQL</a></li>
+            <li><a href="PythonPage.html">Python</a></li>
+          </ul>
+
+
+        <table id="tabellalezioni" style="width: 300; text-align: center;">
+            <tbody>
+                <thead>
+                    <tr><th>Lezioni</th><th>Ore</th></tr>
+                </thead>
+               
+                <tr><td> Lezione 1</td><td>2</td></tr>
+                <tr><td>Lezione 2</td><td>1</td></tr>
+                <tr><td>Lezione 3</td><td>3</td></tr>
+                <tr><td>Lezione 4</td><td>2</td></tr>
+                <tr><td>TOTALE</td><td id="totale"></td></tr>
+            </tbody>
+        </table>
+        <script>
+            var tab=document.getElementById("tabellalezioni");
+            var cell=tab.getElementsByTagName("td");
+            var tot=0;
+            var valore=0;
+            for(i=0;i<(cell.length-1);i++)
+            {   
+                valore=cell[i].textContent;
+                
+                if(! isNaN(valore))
+                {
+                    valore=parseInt(valore);
+                    tot=tot+valore;
+                }
+            }
+            document.getElementById("totale").textContent=tot;
+        </script>
+    </body>
+    
+</html>
