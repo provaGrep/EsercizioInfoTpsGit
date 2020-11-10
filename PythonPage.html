@@ -40,6 +40,66 @@
 					sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
             </div>
+            <div class="column">
+                <h3>Tabella lezioni</h3>
+                <table border="3px">
+                    <thead>
+                        <th>Fondamenti</th>
+                        <th>Avanzamento</th>
+                        <th>Progetto Finale</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="left">
+                                Cos'&egrave; Python<br>Parole chiave Python<br>Primo Programmino Python
+                            </td>
+                            <td align="left">
+                                Oggetti Python<br>Metodi Python<br>Classi Python
+                            </td>
+                            <td align="left">
+                                Progettazione<br>Sviluppo<br>Conclusione&copy;
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="column">
+                <h3>Link pagine</h3>
+                <p>
+                    <a href="../HomePage.html" class="a2">HomePage</a>
+                    <a href="#" target = "_blank" class="a2">C#Page</a>
+                    <a href="#" target = "_blank" class="a2">PythonPage</a>
+                    <a href="#" target = "_blank" class="a2">HtmlPage</a>
+                    <a href="#" target = "_blank" class="a2">JavaPage</a>
+                </p>
+            </div>
+            <footer>
+                <table id="tabellalezioni" style="width: 300; text-align: center;" border="2" align="left">
+                    <tbody>
+                        <tr><th>Lezioni</th><th>Ore</th></tr>
+                        <tr><td>Lezione 1</td><td>2</td></tr>
+                        <tr><td>Lezione 2</td><td>2.30</td></tr>
+                        <tr><td>Lezione 3</td><td>3</td></tr>
+                        <tr><td>TOTALE</td><td id="totale"></td></tr>
+                    </tbody>
+                </table>
+                <script>
+                    var tab=document.getElementById("tabellalezioni");
+                    var cell=tab.getElementsByTagName("td");
+                    var tot=0;
+                    var valore=0;
+                    for(i=0;i<(cell.length-1);i++)
+                    {   
+                        valore=cell[i].textContent;
+                        if(! isNaN(valore))
+                        {
+                            valore=parseFloat(valore);
+                            tot=tot+valore;
+                        }
+                    }
+                    document.getElementById("totale").textContent=tot;
+                </script>
+            </footer>
         </div>
     </body>
 </html>
