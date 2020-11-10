@@ -59,3 +59,34 @@ a:hover
     font-size: 20px;
     display: inline-block;
 }
+.a2
+{
+    text-decoration: none;
+    border: 2px solid grey;
+    color: lightseagreen;
+    font-size: 10px;
+    background-color: black;
+}
+.column {
+    float: left;
+    width: 47%;
+    overflow: auto;
+    }
+footer
+{
+    position: relative;
+    bottom: 0px;
+}
+@media screen and (max-width: 900px) {
+    .column 
+    {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    .column
+    {
+    width: 100%;
+    }
+}
