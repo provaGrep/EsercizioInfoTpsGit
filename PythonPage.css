@@ -1,0 +1,61 @@
+body
+{
+    background-color: #72d3db;
+    /*per mettere un'immagine come sfondo:
+    background-image: url('urlDellImmagine');
+    background-size: cover;
+    background-repeat: repeat-y o -x;
+    background-attachment: fixed o scroll; per farlo rimanere fisso o scrollante*/
+    margin: 10px;/*tra elemento e elemento esterno*/
+}
+header
+{
+    background-color: black;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    text-align: center;
+    /*bordo elemento e quello che contiene*/
+}
+h1 
+{
+    font: bold 36px/100% Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+    color: yellow;
+    position: sticky;
+    top: 0;
+}
+#image
+{
+    width: 80%;
+    height: 400px;
+    padding: 5px;
+    margin: 15px;
+    border: 10px ridge white; /*o groove*/
+    border-radius: 10px;
+}
+h2
+{
+    font: bold 24px/100% Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+}
+a:hover
+{
+    background-color: yellow;
+}
+#navBar
+{
+    text-align: center;
+}
+.a1
+{
+    text-decoration: none;
+    border: 2px solid grey;
+    color: lightseagreen;
+    padding: 10px;
+    margin: 5%;
+    font-size: 20px;
+    display: inline-block;
+}
