@@ -1,1 +1,94 @@
-
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Corso SQL</title>
+        <link rel="stylesheet" type="text/css" href="SQLPage.css">
+    </head>
+    <body>
+    <p>
+        <h1>CORSO SQL</h1>
+        <picture>
+            <source srcset="bbb.jpg" media="(min-width: 900px)">
+            <source srcset="aaa.jpg" media="(max-width: 899px)">
+            <img id="image" src="aaa.jpg" alt="Img">
+        </picture>
+    </p>
+    <nav>
+        <ul>    
+       <li><a href="HomePage.html">HomePage</a></li>
+       <li><a href="PythonPage.html">Python</a></li>
+       <li><a href="CsharpPage.html">C# </a></li>
+       <li><a href="HtmlPage.html">HtmlPage</a></li>
+       <li><a href="">SQLPage</a></li>
+       </ul>    
+    </nav>
+    
+    <h3>PRESENTAZIONE CORSO</h3>
+    <div class="pres">
+    <p>Il corso avrà una durata di 4 lezioni e andremo a vedere le basi del linguaggio SQL e il modo in cui si interfaccia con i database. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="box"> 
+        <table id="PresentazioneCorso">
+            <tbody>
+                <tr><th>Lezione 1</th>
+                <th>Lezione 2</th>           
+                </tr>
+                <tr><td data-title="Lezione 1">Nella prima lezione del corso, della durata di 2 ore andremo a vedere le basi teoriche del linguaggio SQL.</td>
+                    <td data-title="Lezione 2">Nella seconda lezione, della durata di 4 ore andremo a fare le prime query sul database degli studenti di una scuola</td>  
+                </tr>
+                <tr><th>Lezione 3</th>
+                    <th>Lezione 4</th>
+                </tr>
+                <tr>
+                    <td data-title="Lezione 3">Nella terza lezione, della durata di 3 ore approfondiremo le query vistenella lezione precedente e ne vedremo altre più complesse.</td>
+                    <td data-title="Lezione 4">Nella quarta lezione, della durata di 3 ore faremo un'esercitazione un po' più complessa che sarà soggetta a valutazione finale.</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="vertical-menu">
+            <ul>    
+                <li><a href="HomePage.html">HomePage</a></li>
+                <li><a href="PythonPage.html">Python</a></li>
+                <li><a href="CsharpPage.html">C# </a></li>
+                <li><a href="HtmlPage.html">HtmlPage</a></li>
+                <li><a href="">SQLPage</a></li>
+           </ul>    
+        </div>
+        <div class="contenitore">
+        <h3>Durata lezioni:</h3>
+            <div class="box2">           
+                <table id="oreLezione" >
+                    <tbody>
+                        <tr><th>Lezione</th><th>Ore</th></tr>
+                        <tr><td>Lezione 1</td><td>2</td></tr>
+                        <tr><td>Lezione 2</td><td>4</td></tr>
+                        <tr><td>Lezione 3</td><td>3</td></tr>
+                        <tr><td>Lezione 4</td><td>3</td></tr>
+                        <tr><td>TOTALE</td><td id="totale"></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="footer">
+            <footer>
+                <p>Contatti - Numeri di telefono: 111 1111111 / 222 2222222 - mail: lanostraazienda@gmail.com</p>
+            </footer>
+        </div>
+        <script>
+        var tab=document.getElementById("oreLezione");
+        var cell=document.getElementsByTagName("td");
+        var valore=0;
+        var tot=0;
+        for(i=0;i<(cell.length-1);i++){
+            valore=cell[i].textContent;
+            if(! isNaN(valore))
+            {
+                valore=parseInt(valore);
+                tot=tot+valore;
+            }
+        }
+        document.getElementById("totale").textContent=tot;
+        </script>
+    </body>
+    </html>
