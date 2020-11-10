@@ -1,0 +1,136 @@
+.corso{
+    font-size: xx-large;
+}
+header{
+    font-size: 40px;
+    text-shadow: -2px 0 purple , 0 2px purple , 2px 0 purple , 0 -2px purple ;
+    margin-top: 25px;
+    color: white;
+    
+}
+body{
+    width: auto;
+    background-color: white;
+    background-image: url(sfondo.jpg);
+    background-size: auto;
+}
+img{
+margin-top: 20px;
+}
+
+.navigazione th{
+    border: 1px solid purple;
+    border-collapse: collapse;
+    width: 150px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: lightgray; 
+}
+
+.titolo{
+
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    background-color: purple;
+    width: auto;
+    border-radius: 20px;
+    color: white;
+}
+article{
+    table-layout: fixed;
+    height: auto;
+    width: auto;
+    background-color: lightgray;
+    border-radius: 10px;
+    color: black;   
+    text-align: left;
+}
+p{
+    font-size: medium;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.lezioni th, td{
+    border: 3px solid purple;
+    border-collapse: collapse;
+    border-radius: 0px;
+    width: 25vw; 
+    height: auto;
+    color: black;
+    background-color: violet;
+   font-size: medium;
+   padding: 5px;
+   /* width: auto; */
+  }
+ 
+section {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: 600px) {
+    section{
+        display: inline-table;
+        align-items: center;
+        
+    }
+    table{
+        width: 100%;
+    }
+    nav{
+      margin: 0 auto;
+     
+    }
+    header{
+        font-size: x-large;
+    }
+}
+@media screen and (max-width: 400px) {
+    header{
+        font-size: large;
+    }
+}
+h2{
+    font-size: medium;
+   padding-left: 20px;
+}
+h1{
+    font-size: 25px;
+}
+nav{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: skyblue;
+    height: 200px;
+    width: 150px;
+}
+li{
+    padding-top: 18px;
+    padding-right: 40px;
+    font-size: medium;
+    width: auto;
+  
+}
+.tabOre th,td{
+    width: 100px;
+    border: 2px solid purple;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+}
+div{
+ 
+    border: 3px solid black;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    padding: 50px;
+    background-image: url(sfondo2.png);
+    background-position: center;
+} 

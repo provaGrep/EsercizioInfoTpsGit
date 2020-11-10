@@ -23,5 +23,119 @@
                 <th><a href="SQLPage.html">SQL</a></th>
             </tr>
          </table>
-        </body>
-        </html>
+
+          <hr>
+
+          <article class="titolo">
+            <h1>Presentazione corso C#</h1>
+            <article>
+                <h2>Perché dovresti imparare C#? </h2>
+                <p>
+  Prima di tutto, perché C# è un potente e moderno linguaggio di programmazione object-oriented, uno dei più diffusi e richiesti al mondo. 
+  Con C# si possono sviluppare software indipendenti con una propria interfaccia utente cosi come possono essere sviluppate applicazioni web 
+  e applicazioni mobili.
+  Si hanno a disposizione librerie e framework per lo sviluppo di qualsiasi software.
+                </p>
+            </article>
+            <article>
+                <h2>Quali tipi di applicazioni potrei sviluppare#? </h2>
+                <p>
+  Videogames (con Unity 3D)
+  Mobile Apps per iOS/Android/Windows (con Xamarin)
+  Web Apps (con ASP.NET, Blazor)                
+  Windows Apps (con il .NET Framework)                
+  Microservice, e altre applicazioni server-side su Mac/Linux/Win (con .NET Core)    
+                </p>
+            </article>
+            <article>
+                <h2>Altre informazioni</h2>
+                <p>
+  Questo corso è una guida molto dettagliata del linguaggio C# 8, con l'utilizzo di .NET 3.1. 
+  Contiene i fondamenti base del linguaggio, ed anche gli argomenti più avanzati, come i generics ed i delegate.                 
+  Ogni lezione ti avvicina in modo graduale, ma approfondito, alla conoscenza di questo fondamentale linguaggio di programmazione object-oriented.
+                </p>
+            </article>
+          </article>
+       
+          <hr>
+
+        <section>
+            <table class="lezioni">
+                <tr>
+                    <th>lezione1</th>
+                    <th>lezione2</th>
+                </tr>
+                <tr>
+                    <td><p>
+Lezioni informali di programmazione C# per 
+principianti. Livello: principianti
+                    </p></td>
+                    <td><p>
+Realizziamo subito il nostro primo 
+programma. 
+                 </p></td>
+                </tr>
+                <tr>
+                    <th>lezione3</th>
+                    <th>lezione4</th>
+                </tr>
+                <tr>
+                    <td><p>
+Il concetto di classe è alla base di ogni 
+linguaggio di programmazione orientato 
+agli oggetti
+                    </p></td>
+                    <td><p>
+L’ereditarietà è la possibilità per una 
+classe di ereditare da un’altra le variabili, 
+i metodi, di estendere il concetto
+della classe base e specializzarlo.
+                 </p></td>
+                </tr>
+            </table>     
+
+            <nav>
+                    <ul>
+                      <li><a href="HomePage.html">HOME</a></li>
+                      <li><a href="HtmlPage.html">HTML</a></li>
+                      <li><a href="PythonPage.html">PYTHON</a></li>
+                      <li><a href="SQLPage.html">SQL</a></li>             
+                    </ul>
+            </nav>
+
+        </section>
+
+      <hr>
+
+        <div>   
+            <table id="tabellaOre" class="tabOre">
+                <tbody>
+                    <tr><th>Lezioni</th><th>Ore</th></tr>
+                    <tr><td>lezione1</td><td>1</td></tr>
+                    <tr><td>lezione2</td><td>4</td></tr>
+                    <tr><td>lezione3</td><td>2</td></tr>
+                    <tr><td>lezione4</td><td>3</td></tr>
+                    <tr><td>TOTALE</td><td id="totale"> </td></tr>  
+                </tbody>
+            </table>      
+            <script>
+                var tabella=document.getElementById("tabellaOre");
+                var celle=tabella.getElementsByTagName("td");
+                var tot=0;
+                var valore=0;
+                for (i=0; i<(celle.length-1); i++)
+                {
+                    valore=celle[i].textContent;
+             
+                    if(!isNaN(valore))
+                    {
+                        valore=parseInt(valore);
+                        tot=tot+valore;
+                    }
+                }
+                document.getElementById("totale").textContent=tot;
+            </script>
+        </div>
+     
+    </body>
+</html>
