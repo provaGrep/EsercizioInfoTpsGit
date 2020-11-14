@@ -9,7 +9,7 @@
         <body>
             <div id="header">
                 <header>
-                    <h1>Corsi di informatica</h1>
+                    <h1>CORSI DI INFORMATICA</h1>
                     <picture>
                         <source srcset="ImmagineHome2.jpg" media="(max-width: 749px)">
                         <source srcset="ImmagineHome1.jpg" media="(max-width: 999px)">
@@ -36,34 +36,59 @@
         
             <div id="pres">
                 <h2>Corsi - Programmazione in Python, C#, Html, SQL</h2>
-                <div id="description">
+                <div id="description" 
+                     onmouseover="mouseOver()" 
+                     onmouseout="mouseOut()">
                     <p>Ciascun corso ha come obiettivo l'apprendimento delle conoscenze e lo sviluppo delle
                         competenze di base del relativo linguaggio. Lo svolgimento di ciascun corso prevede
                         un diverso numero di ore e, nel caso in cui almeno il 50% di esse siano state completate,
                         il rilascio di un relativo attestato di frequenza.</p>
+                        <div id="description2">
+                            <p>I corsi disponibili riguardano quattro linguaggi, quali Python, C#, HTML e SQL. </p>
+                               <ul>
+                                   <li>Il corso di Python prevede 15 ore di lezione, durante le quali sarà utilizzata la 
+                                    piattaforma di Visual Studio Code. 
+                                    <a href="PythonPage.html" style="color:rgb(30, 30, 99);">
+                                        <u>Per ulteriori dettagli, visitare la relativa pagina.</u></a></li>
+                                    <li>Il corso di C# prevede 18 ore di lezione, durante le quali sarà utilizzato
+                                    l'ambiente di sviluppo Microsoft Visual Studio Community 2019. 
+                                    <a href="CsharpPage.html" style="color:rgb(30, 30, 99);">
+                                        <u>Per ulteriori dettagli, visitare la relativa pagina.</u></a></li>
+                                    <li>Il corso di Html prevede 12 ore di lezione, durante le quali sarà utilizzato
+                                    Visual Studio Code. 
+                                    <a href="HtmlPage.html" style="color:rgb(30, 30, 99);">
+                                        <u>Per ulteriori dettagli, visitare la relativa pagina.</u></a></li>
+                                    <li>Il corso di SQL prevede 15 ore di lezione, durante le quali sarà utilizzato, 
+                                    in particolare, il DBMS MariaDB e la piattaforma Laragon. 
+                                    <a href="HtmlPage.html" style="color:rgb(30, 30, 99);">
+                                        <u>Per ulteriori dettagli, visitare la relativa pagina.</u></a></li>
+                                </ul>
+                        </div>
                 </div>
             </div>
             
             <div id="nav2">
                 <h3>Pagine dei corsi:</h3>
                 <aside>
-                    <a href="PythonPage.html">Python</a><br>
-                    <a href="CsharpPage.html">C#</a><br>
-                    <a href="HtmlPage.html">Html</a><br>
-                    <a href="SQLPage.html">SQL</a><br>
+                    <a href="PythonPage.html"><u>Python</u></a><br>
+                    <a href="CsharpPage.html"><u>C#</u></a><br>
+                    <a href="HtmlPage.html"><u>Html</u></a><br>
+                    <a href="SQLPage.html"><u>SQL</u></a><br>
                 </aside>
             </div>
 
             <div id="azienda">
-                <p><u><b>La nostra azienda</b></u></p>
+                <p style="background-image: linear-gradient(black, green);"><u><b>LA NOSTRA AZIENDA</b></u></p>
             </div>
             
             <div id="pres2">
-                <p>La nostra è un'azienda informatica specializzata, tra l'altro, nella riparazione di dispositivi quali PC,
+                <p style="background-image: linear-gradient(green, black);">La nostra è un'azienda informatica specializzata, tra l'altro, nella riparazione di dispositivi quali PC,
                     smartphone e tablet. Offriamo assistenza sia hardware che software per risolvere qualsiasi tipo di problema. </p>
             </div>
 
-            <table style="margin-left: 3px;">
+            <table style="margin-left: 3px; 
+            background-image: linear-gradient(black, rgb(30, 30, 99), black, green, 
+            black, rgb(30, 30, 99), black);">
                 <tbody>
                     <tr><th>Corso</th><th>Numero Ore</th></tr>
                     <tr><td>Python</td><td>15</td></tr>
@@ -76,7 +101,8 @@
             
             <div id="footer">
                 <footer>
-                    <p>Contatti - Numeri di telefono: 111 1111111 / 222 2222222 - mail: lanostraazienda@gmail.com</p>
+                    <p>CONTATTI - Numeri di telefono: 395 3451237 / 396 1177245 - 
+                        Mail: lanostraazienda@gmail.com</p>
                 </footer>
             </div>
 
@@ -94,7 +120,20 @@
                     }
                     document.getElementById("tot").textContent = tot;
                 }
+
+                var desc = document.getElementById("description2");
+                function mouseOver()
+                {
+                    desc.style.display = "block";
+                }
+
+                function mouseOut()
+                {
+                    desc.style.display = "none";
+                }
             </script>
         </body>
+            
+        
     </div>
 </html>

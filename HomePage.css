@@ -1,13 +1,25 @@
 @media (min-width: 1000px)
 {
-    p, tr, h1, h2, h3, h4 td, a 
+    h1, h2, h3, h4, p, tr, td, a, li
     {
-        color: #ccc;
+        color: #ccc;;
     }
-    
+
+    ul
+    {
+        margin: 0px;
+        margin-bottom: 3px;
+    }
+
+    a
+    {
+        text-decoration: none;
+    }
+
     h1
     {
         text-align: center;
+        text-shadow: 5px 5px 8px green;
         font-size: 50px;
         margin-bottom: 10px;
         margin-top: 0px;
@@ -18,8 +30,8 @@
     {
         border-width: 1px;
         border-style: solid;
-        border-color: #ccc;
         text-align: center;
+        text-shadow: 3px 3px rgb(30, 30, 99);
         padding: 2px;
         margin-bottom: 0px;
         margin-top: 0px;
@@ -61,7 +73,6 @@
     #nav1
     {
         font-size: large;
-        padding-bottom: 3px; 
         width: 24.3%;
         border-width: 2px;
         border-style: solid;
@@ -70,7 +81,7 @@
         float: left;
         margin-left: 3px;
     }
-    
+
     #page
     {
         width: 1000px;
@@ -112,6 +123,11 @@
         padding-right: 5px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+
+    #description2
+    {
+        display: none;
+    }
     
     #nav2
     {
@@ -150,19 +166,42 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin-top: 10px;
     }
+
+    #left
+    {
+        margin: 10px;
+        float: left;
+    }
+
+    #nav1:hover, #nav2:hover
+    {
+        background-color: rgb(30, 30, 99);
+    }
 }
 
 @media (min-width: 750px) and (max-width: 999px)
 {
-    p, tr, h1, h2, h3, h4 td, a 
+    p, tr, h1, h2, h3, h4 td, a, li
     {
         color: #ccc;
         font-size: small;
     }
     
+    ul
+    {
+        margin: 0px;
+        margin-bottom: 3px;
+    }
+
+    a
+    {
+        text-decoration: none;
+    }
+
     h1
     {
         text-align: center;
+        text-shadow: 5px 5px 8px green;
         font-size: 50px;
         margin-bottom: 10px;
         margin-top: 0px;
@@ -174,6 +213,7 @@
         border-width: 1px;
         border-style: solid;
         font-size: medium;
+        text-shadow: 2px 2px rgb(30, 30, 99);
         border-color: #ccc;
         text-align: center;
         padding: 2px;
@@ -218,7 +258,6 @@
     #nav1
     {
         font-size: large;
-        padding-bottom: 3px; 
         width: 24%;
         border-width: 2px;
         border-style: solid;
@@ -308,18 +347,30 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin-top: 10px;
     }
+
+    #nav1:hover, #nav2:hover
+    {
+        background-color: rgb(30, 30, 99);
+    }
 }
 
 @media (max-width: 749px)
 {
-    p, tr, h1, h2, h3, h4 td, a 
+    p, tr, h1, h2, h3, h4 td, a, li
     {
         color: #ccc;
     }
     
+    ul
+    {
+        margin: 0px;
+        margin-bottom: 3px;
+    }
+
     h1
     {
         text-align: center;
+        text-shadow: 3px 3px 5px green;
         font-size: 30px;
         margin-bottom: 10px;
         margin-top: 0px;
@@ -332,6 +383,7 @@
         border-style: solid;
         border-color: #ccc;
         text-align: center;
+        text-shadow: 2px 2px rgb(30, 30, 99);
         padding: 2px;
         margin-bottom: 0px;
         margin-top: 0px;
@@ -374,7 +426,6 @@
     #nav1
     {
         font-size: medium;
-        padding-bottom: 3px; 
         width: 24.3%;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         float: left;
@@ -446,7 +497,7 @@
 
     #footer
     {
-        font-size: xx-small;
+        font-size: small;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin-top: 15px;
     }
